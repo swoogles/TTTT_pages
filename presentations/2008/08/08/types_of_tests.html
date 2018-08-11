@@ -83,11 +83,11 @@ function setup_keypress() {
 function swipeNavigation(el,d) {
     console.log("swipeNavigation");
     if ( d === "l" ) {
-        document.location.href = "";
-    } else if ( d === "r") {
         document.location.href = "/TTTT_pages/presentations/2008/08/08/types_of_tests/page2of40.html";
+    } else if ( d === "r") {
+        document.location.href = "";
     }
-    alert("you swiped on element with id '"+el+"' to "+d+" direction");
+    // alert("you swiped on element with id '"+el+"' to "+d+" direction");
 }
     </script>
     <script type="text/javascript">
@@ -130,7 +130,7 @@ function swipeNavigation(el,d) {
 
 <h2 class="center" id="types-of-tests-and-testable-types">Types of Tests and Testable Types</h2>
 
-<p class="center">Use left/right arrays to navigate backwards/forwards</p>
+<p class="center">Use left/right arrows or swipe to navigate backwards/forwards</p>
 
 <p class="center"><a href="github.com/swoogles/TTTT">github.com/swoogles/TTTT</a></p>
 
