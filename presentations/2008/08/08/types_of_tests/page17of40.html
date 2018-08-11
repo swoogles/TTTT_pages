@@ -8,7 +8,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/TTTT/assets/css/style.css?v=c89246849db9d552ac0bebb10b43aaf6d4d500f3">
+    <link rel="stylesheet" href="/TTTT_pages/assets/css/style.css?v=54c77e38ed2b0a2ba87a8944794e1e67804a9284">
 
     <style>
     header { border-bottom: 1px solid #000; }
@@ -23,17 +23,19 @@ header a {  align: right; }
     </style>
 
     <script type="text/javascript">
-        function setup_keypress() {
+        // This is LIKELY where the problem with my next/prev links can be fixed.
+// TODO as soon as its done here, make sure it's fixed EVERYWHERE.
+function setup_keypress() {
     document.onkeydown = function(e) {
         switch (e.keyCode) {
             
             case 37: // left
-                document.location.href = "http://localhost:4000/TTTT/presentations/2008/08/08/types_of_tests/page16of40.html";
+                document.location.href = "/TTTT_pages/presentations/2008/08/08/types_of_tests/page16of40.html";
                 break;
             
             
             case 39: // right
-                document.location.href = "http://localhost:4000/TTTT/presentations/2008/08/08/types_of_tests/page18of40.html";
+                document.location.href = "/TTTT_pages/presentations/2008/08/08/types_of_tests/page18of40.html";
                 break;
             
         }
@@ -49,15 +51,15 @@ header a {  align: right; }
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Types of Tests and Testable Types" />
 <meta property="og:description" content="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Types of Tests and Testable Types" />
-<link rel="canonical" href="http://localhost:4000/TTTT/presentations/2008/08/08/types_of_tests/page17of40.html" />
-<meta property="og:url" content="http://localhost:4000/TTTT/presentations/2008/08/08/types_of_tests/page17of40.html" />
+<link rel="canonical" href="http://localhost:4000/TTTT_pages/presentations/2008/08/08/types_of_tests/page17of40.html" />
+<meta property="og:url" content="http://localhost:4000/TTTT_pages/presentations/2008/08/08/types_of_tests/page17of40.html" />
 <meta property="og:site_name" content="TTTT" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2008-08-08T00:00:00-06:00" />
-<link rel="prev" href="http://localhost:4000/TTTT/TTTT/presentations/2008/08/08/types_of_tests/page16of40.html" />
-<link rel="next" href="http://localhost:4000/TTTT/TTTT/presentations/2008/08/08/types_of_tests/page18of40.html" />
+<link rel="prev" href="http://localhost:4000/TTTT_pages/TTTT_pages/presentations/2008/08/08/types_of_tests/page16of40.html" />
+<link rel="next" href="http://localhost:4000/TTTT_pages/TTTT_pages/presentations/2008/08/08/types_of_tests/page18of40.html" />
 <script type="application/ld+json">
-{"description":"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Types of Tests and Testable Types","@type":"BlogPosting","headline":"Integration Tests - External","dateModified":"2008-08-08T00:00:00-06:00","url":"http://localhost:4000/TTTT/presentations/2008/08/08/types_of_tests/page17of40.html","datePublished":"2008-08-08T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/TTTT/presentations/2008/08/08/types_of_tests/page17of40.html"},"@context":"http://schema.org"}</script>
+{"description":"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Types of Tests and Testable Types","@type":"BlogPosting","headline":"Integration Tests - External","dateModified":"2008-08-08T00:00:00-06:00","url":"http://localhost:4000/TTTT_pages/presentations/2008/08/08/types_of_tests/page17of40.html","datePublished":"2008-08-08T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/TTTT_pages/presentations/2008/08/08/types_of_tests/page17of40.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -74,8 +76,8 @@ header a {  align: right; }
 <!--
     These are commented out for live demo purposes.
 <span>Testable Types and Types of Testing</span>
-<a href="http://localhost:4000/TTTT/presentations/2008/08/08/types_of_tests/page16of40.html">Previous</a>
-<a href="http://localhost:4000/TTTT/presentations/2008/08/08/types_of_tests/page18of40.html">Next</a>
+<a href="http://localhost:4000/TTTT_pages/presentations/2008/08/08/types_of_tests/page16of40.html">Previous</a>
+<a href="http://localhost:4000/TTTT_pages/presentations/2008/08/08/types_of_tests/page18of40.html">Next</a>
 <a href="http://github.com/swoogles/TTTT" class="btn btn-github"><span class=""icon"></span>View on GitHub</a>
 -->
 
@@ -86,13 +88,13 @@ header a {  align: right; }
 
 
 <!--<span style="display:inline; float: right">-->
-<!--<a href="http://localhost:4000/TTTT/presentations/2008/08/08/types_of_tests/page16of40.html">Previous</a>-->
-<!--<a href="http://localhost:4000/TTTT/presentations/2008/08/08/types_of_tests/page18of40.html">Next</a>-->
+<!--<a href="http://localhost:4000/TTTT_pages/presentations/2008/08/08/types_of_tests/page16of40.html">Previous</a>-->
+<!--<a href="http://localhost:4000/TTTT_pages/presentations/2008/08/08/types_of_tests/page18of40.html">Next</a>-->
 <!--</span>-->
 
 <h1 id="integration-tests-external-1">Integration Tests - External</h1>
 
-<p class="failure_image"><img src="http://localhost:4000/TTTT/assets/images/06_integration_tests_external.png" alt="Integration Tests" class="img-responsive" /></p>
+<p class="failure_image"><img src="http://localhost:4000/TTTT_pages/assets/images/06_integration_tests_external.png" alt="Integration Tests" class="img-responsive" /></p>
 
 
 
