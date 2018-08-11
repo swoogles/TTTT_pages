@@ -44,7 +44,8 @@ function setup_keypress() {
 
     </script>
     <script type="text/javascript">
-        function detectswipe(el,func) {
+        // Note - this is now ignoring el and applying all behavior to body
+function detectswipe(el,func) {
     swipe_det = new Object();
     swipe_det.sX = 0; swipe_det.sY = 0; swipe_det.eX = 0; swipe_det.eY = 0;
     var min_x = 30;  //min x swipe for horizontal swipe
@@ -52,7 +53,9 @@ function setup_keypress() {
     var min_y = 50;  //min y swipe for vertical swipe
     var max_y = 60;  //max y difference for horizontal swipe
     var direc = "";
-    ele = document.getElementById(el);
+    // ele = document.getElementById(el);
+
+    ele = document.body;
     ele.addEventListener('touchstart',function(e){
         var t = e.touches[0];
         swipe_det.sX = t.screenX;
