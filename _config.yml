@@ -1,1 +1,23 @@
 theme: jekyll-theme-hacker
+paginate: 5
+#url: "swoogles.github.io"
+# site.github.repository_name: TTTT
+baseurl: /TTTT_pages
+url: https://swoogles.github.io
+
+
+collections:
+  demos:
+    output: true
+    permalink: /demos/:path/
+
+paginate_content:
+  debug: true
+  collections: pages, posts, demos, drafts
+
+
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
